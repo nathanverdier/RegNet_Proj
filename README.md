@@ -56,7 +56,7 @@ Les critères testés :
 - **Impact du module régulateur selon son positionnement**  
 - **Efficacité paramétrique** (gain en performance vs. coût en calculs)
 
-- #### **Données utilisées**  
+#### **Données utilisées**  
 - **CIFAR-10/100** pour des tests sur de petites images  
 - **ImageNet** pour des images plus complexes et en haute résolution  
 

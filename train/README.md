@@ -42,7 +42,7 @@ Exécutez le programme principal avec les arguments désirés.
 
 ### Execution :
 ```bash
-python trainv2.py
+python3 trainv2.py
 ```
 
 ## Structure du Code
