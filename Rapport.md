@@ -37,6 +37,28 @@ header-includes:
 
 \newpage
 
+# Sommaire
+
+1. [Lien du projet](#lien-du-projet)
+2. [Résumé de l'article et contribution](#résumé-de-larticle-et-contribution)
+3. [Analyse de la méthode](#analyse-de-la-méthode)
+    - [Données utilisées](#données-utilisées)
+    - [Modèle et architecture](#modèle-et-architecture)
+    - [Optimisation et entraînement](#optimisation-et-entraînement)
+    - [Résultats obtenus](#résultats-obtenus)
+4. [Tests et évaluation](#tests-et-évaluation)
+    - [Objectif des tests](#objectif-des-tests)
+    - [Données utilisées](#données-utilisées-1)
+    - [Observations](#observations)
+    - [Problèmes rencontrés](#problèmes-rencontrés)
+5. [Le code](#le-code)
+6. [Prérequis](#prérequis)
+7. [Utilisation](#utilisation)
+8. [Structure du Code](#structure-du-code)
+9. [Conclusion générale](#conclusion-générale)
+
+\newpage
+
 ## Lien du projet
 
 Vous pouvez trouver le projet sur GitHub en suivant ce [lien github](https://github.com/nathanverdier/RegNet_Proj).
