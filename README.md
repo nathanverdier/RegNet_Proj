@@ -1,5 +1,24 @@
 # RegNet_Proj
 
+
+---
+
+<div align = center>
+  
+&nbsp; ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+&nbsp; ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+&nbsp; ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white)
+&nbsp; ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-000000?logo=deep-learning&logoColor=white)
+&nbsp; ![RegNet](https://img.shields.io/badge/RegNet-008080?logo=github&logoColor=white)
+&nbsp; ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
+
+---
+
+
+[Résumé](#résumé-de-l'article-et-contribution) | [Analyse](#analyse-de-la-méthode) | [Tests et évaluation](#tests-et-évaluation) | [Conclusion](#conclusion-générale)
+
+</div>
+
 ### Résumé de l'article et contribution
 
 L'article propose **RegNet**, une architecture basée sur **ResNet** qui introduit un **module régulateur** utilisant des **RNN convolutionnels** (ConvRNNs, notamment ConvLSTM et ConvGRU). L'objectif est de **mieux exploiter les informations spatiales et temporelles** dans les réseaux résiduels, en contournant les limitations des connexions de raccourci classiques. Expérimenté sur **CIFAR-10, CIFAR-100 et ImageNet**, RegNet **améliore les performances** des modèles ResNet et SE-ResNet tout en nécessitant un nombre limité de paramètres supplémentaires.
@@ -54,3 +73,18 @@ Les critères testés :
 
 ### **Conclusion générale**  
 RegNet constitue une **amélioration significative** de ResNet en exploitant un module régulateur basé sur des **ConvRNNs**. Il permet d’**apprendre des caractéristiques complémentaires** et **d’améliorer la classification des images** tout en **réduisant le besoin de profondeur du réseau**. Ces résultats ouvrent la voie à son application dans d'autres architectures basées sur ResNet et d'autres tâches comme la détection d’objets et la super-résolution.
+
+## Branche de rendu 
+Master
+
+## Techniciens
+<a href = "https://codefirst.iut.uca.fr/git/ouriahi">
+<img src ="https://codefirst.iut.uca.fr/git/avatars/84062b2bb326d9e9154a9859b375e599?size=870" height="50px">
+</a>
+<a href = "https://codefirst.iut.uca.fr/git/nathan.verdier">
+<img src ="https://codefirst.iut.uca.fr/git/avatars/84062b2bb326d9e9154a9859b375e599?size=870" height="50px">
+</a>
+
+
+<div align = center>
+</div>
