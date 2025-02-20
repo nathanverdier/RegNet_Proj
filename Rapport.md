@@ -65,7 +65,16 @@ Vous pouvez trouver le projet sur GitHub en suivant ce [lien github](https://git
 
 ## Résumé de l'article et contribution
 
-L'article propose **RegNet**, une architecture basée sur **ResNet** qui introduit un **module régulateur** utilisant des **RNN convolutionnels** (ConvRNNs, notamment ConvLSTM et ConvGRU). L'objectif est de **mieux exploiter les informations spatiales et temporelles** dans les réseaux résiduels, en contournant les limitations des connexions de raccourci classiques. Expérimenté sur **CIFAR-10, CIFAR-100 et ImageNet**, RegNet **améliore les performances** des modèles ResNet et SE-ResNet tout en nécessitant un nombre limité de paramètres supplémentaires.
+L'article propose **RegNet**,, une nouvelle architecture pour la classification d'images inspirée de **ResNet**.
+Il introduit un **module régulateur** basé sur des réseaux récurrents **convolutionnels** (ConvRNN) pour extraire des caractéristiques complémentaires.
+Ce module agit comme une mémoire, permettant de capter la dépendance **spatio-temporelle** entre les blocs du réseau.
+L'approche vise à surmonter la limitation des connexions de raccourci qui favorisent la redondance des informations.
+Les auteurs explorent différentes variantes, notamment **ConvLSTM** et **ConvGRU**, pour implémenter le régulateur.
+Le module régulateur est facilement intégré en parallèle aux raccourcis existants dans diverses architectures basées sur ResNet.
+Des expérimentations sur **CIFAR-10, CIFAR-100 et ImageNet** montrent une amélioration significative de la précision de classification.
+**RegNet** permet également de réduire la profondeur du réseau tout en optimisant l'utilisation des paramètres.
+L'article présente une analyse détaillée de la fusion des caractéristiques et de la réutilisation de l'information entre les blocs.
+
 
 ## Analyse de la méthode
 
@@ -80,11 +89,11 @@ RegNet repose sur ResNet en y ajoutant un **module régulateur** sous la forme d
 - **RegNet classique** : Ajout d’un ConvRNN dans chaque bloc résiduel.  
 - **Bottleneck RegNet** : Optimisation pour les modèles plus profonds, utilisant une architecture en goulot d’étranglement.
 
+\newpage
+
 ### **Optimisation et entraînement**  
 Les modèles sont entraînés avec **SGD** (momentum 0.9, weight decay 1e-4), et une **réduction progressive du taux d’apprentissage**.  
 Des techniques classiques d’**augmentation de données** (recadrage, miroir, etc.) sont utilisées.
-
-\newpage
 
 ### **Résultats obtenus**  
 - **CIFAR-10/100** : RegNet réduit significativement l’erreur par rapport à ResNet et SE-ResNet.  
@@ -103,6 +112,8 @@ Les critères testés :
 ### **Données utilisées**  
 - **CIFAR-10/100** pour des tests sur de petites images  
 - **ImageNet** pour des images plus complexes et en haute résolution  
+
+\newpage
 
 ### **Observations**  
 - RegNet améliore la classification par rapport aux modèles classiques, grâce à une meilleure exploitation des dépendances spatiales et temporelles.  
@@ -155,6 +166,8 @@ pip install -r requirements.txt
 ### Utilisation
 
 Exécutez le programme principal avec les arguments désirés.
+
+\newpage
 
 ### Execution :  
 
